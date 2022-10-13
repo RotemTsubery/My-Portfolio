@@ -1,6 +1,6 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import portfolio from "../assets/img/my-portfolio-projects.png";
+import portfolio from "../assets/img/my-portfolio-projects1.png";
 import animalWebsite from "../assets/img/animal-website-projects.png";
 import todo from "../assets/img/todo-projects.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
@@ -32,13 +32,13 @@ export const Projects = () => {
       imgUrl: portfolio,
     },
     {
-      title: "Personal Portfolio",
-      description: "Design & Development",
+      title: "Animal Website",
+      description: "C# - ASP.NET-CORE MVC",
       imgUrl: animalWebsite,
     },
     {
-      title: "Personal Portfolio",
-      description: "Design & Development",
+      title: "Todo Application",
+      description: "React , JS , JSX , Bootstrap",
       imgUrl: todo,
     },
   ];
@@ -60,7 +60,7 @@ export const Projects = () => {
                         <Nav.Link eventKey="first">Projects</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="second">Projects 2</Nav.Link>
+                        <Nav.Link eventKey="second">More Projects</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
                         <Nav.Link eventKey="third">My CV</Nav.Link>
@@ -85,8 +85,8 @@ export const Projects = () => {
                         <p>More projects...</p>
                       </Tab.Pane>
                       <Tab.Pane eventKey="third">
-                        <p> <a href="Rotem Tsubery CV 2022!!.pdf"
-                          download="Rotem Tsubery CV 2022!!.pdf">
+                        <p> <a href="Rotem Tsubery CV 2022.pdf"
+                          download="Rotem Tsubery CV 2022.pdf">
 
                           <button className="cv-button" >👇🏽 Download My CV!👇🏽 </button></a>
                         </p>

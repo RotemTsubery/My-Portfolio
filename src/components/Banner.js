@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import headerImg from "../assets/img/header-img.svg";
+import headerImg from "../assets/img/profile_pic.png";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -12,7 +12,7 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = ["Full Stack Developer", "Web Developer", "Web Designer"];
+  const toRotate = ["Full Stack Developer", ".NET Developer", "React Developer"];
   const period = 2000;
 
   useEffect(() => {
@@ -57,7 +57,7 @@ export const Banner = () => {
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                   <span className="tagline">Welcome to my Portfolio</span>
-                  <h1>{`Hi! I'm Rotem,`} <span className="txt-rotate" data-rotate='[ "Full Stack Developer", "Web Developer", "Web Designer" ]'><span className="wrap">{text}</span></span></h1>
+                  <h1>{`Hi! I'm Rotem,`} <span className="txt-rotate" data-rotate='[ "Full Stack Developer", ".NET Developer", "React Developer" ]'><span className="wrap">{text}</span></span></h1>
                   <p>
                     Graduated from a software development course at Sela College and looking for an exciting full-time job.
                     I am passionate about technology and software development. I am curious, creative, and ready for any challenge. I am highly motivated and like to work in a team. I have the ability to learn fast and independently. You can rely on me to complete my tasks on time, and without compromising on quality.
